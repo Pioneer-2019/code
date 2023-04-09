@@ -53,11 +53,18 @@ for path_each in all_files_path:
     df_temp=pd.concat([df_temp,df_each],axis=1,join='outer',ignore_index=True)
     #print(df_temp)
 
-print(df_temp)
+#print(df_temp)
+
+#print(df_temp[0].dtypes)
 
 
+'''
+#文件保存路径
+save_path=r'D:\Study\CPK_Automate_Tool\Result.csv'
+#执行文件报告，不需要行索引和列索引
+df_temp.to_csv(save_path,header=0,index=0)
 
-
+'''
 
 
 '''
