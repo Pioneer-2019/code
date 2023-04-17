@@ -7,7 +7,7 @@ path=r'D:\Study\CPK_Automate_Tool\test\FQ29PB006J-20230130_203239_NSFT_PASS.txt'
 
 #读取一个MES LOG TXT文件到dataframe
 df_temp=pd.read_csv(path,sep="=") 
-print(df_temp)
+#print(df_temp)
 
 #获取dataframe中标志为[TEST_DATA]及[TEST_RESULT]的行号，因为所需数据在两个标志之间
 row_start=df_temp.index.get_loc('[TEST_DATA]')
